@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Shippori Antique', sans-serif;
+
+   
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: #070707;
+    color:  #FFFFFF;
+    height: 10vh;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.titre {
+    width: 10vw;
+    padding-left: 2vw;
+    font-family: 'Jolly Lodger', cursive;
+}
+
+.menu {
+    width: 30vw;
+
+}
+
+.menuhover:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.espacemenu {
+    width: 50vw;
+
+}
+
+.logomenu {
+    width: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    height: 8vh;
+    margin-right: 2vw;
+
+    height: 10vh;
+    
+}
+
+#cart , #profil{
+    height: 50px;
+ 
+}
+
+@media only screen and (max-width: 992px) {
+
+    .espacemenu {
+        width: 10vw;
+    
+    }
+    .titre {
+        width: 25vw;
+        padding-left: 2vw;
+        font-family: 'Jolly Lodger', cursive;
+    }
+
+    .menu {
+        width: 40vw;
+    
+    }
+    
+    nav {
+        font-size: x-small;
+    }
+
+    .logomenu {
+        width: fit-content;
+    }
+
+    #cart , #profil{
+        height: 25px;
+     
+    }
+    
+}
+
+
+/*--------------------------------------------------------------------------------------PARTIE ACCUEIL----------------------------------------------------------------------------- */
+
+
+.tout {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+}
+
+
+.gauche {
+background-image: url('fondblur.png');
+background-color: #070707;
+
+    color: #FFFFFF;
+    width: 50vw;
+}
+
+.violet {
+    color: #9B5DA1;
+    border-bottom: #9B5DA1 solid 2px;
+    border-radius: 1px;
+   
+}
+
+.espaceur {
+    height: 3vh;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    opacity: 0.5;
+   
+}
+
+p {
+    font-weight: 400;
+}
+
+
+.droite {
+    width: 50vw;
+
+    background-color: #1E1E1E;
+}
+
+.photoreviewvid {
+    display: flex;
+    height: 60vh;
+}
+
+.photo {
+    width: 50%;
+   
+}
+
+.bolide {
+    width: 100%;
+   
+    animation-duration: 1s;
+    animation-name: test;
+
+}
+
+
+@keyframes test {
+    0% { transform: rotate(5deg); margin-top: -50%;  }
+    50% { transform: rotate(-5deg); margin-top: 0%;}
+    70% {margin-top: -2%}
+  
+    100% { transform: rotate(0deg); margin-top: 0%;}
+  }
+
+
+
+
+.reviewvid {
+    width: 50%;
+}
+
+.review {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.reviewinter {
+    color: white;
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #A95AB082;
+    border-radius: 10px;
+    padding: 1vh 1vw 1vh 1vw;
+    
+}
+
+.vid {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.vidinter {
+    background-color: #9B5DA1;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 30vh;
+    width: 66%;
+    margin-right: auto;
+}
+
+.separateur {
+    border: 1px solid white;
+    margin-top: -1.5vh;
+    margin-bottom: -1.5vh;
+}
+
+.slogan {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.sloganinter {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+    padding: 2vh 3vw 2vh 3vw;
+}
+
+.rslogo {
+    height: 30vh;
+    display: flex;
+}
+
+.rs {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 20%;
+ 
+}
+
+.logo {
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.rsplacement {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+}
+
+.taillelogo {
+    height: 15vh;
+   padding-bottom: 5vh;
+}
+
+.descstat {
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 992px) {
+   
+    .tout {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: fit-content;
+   
+    }   
+
+    .gauche {
+        background-image: url('fondblur.png');
+        background-color: #070707;
+        
+            color: #FFFFFF;
+            width: 100vw;
+        }
+
+        .droite {
+            width: 100vw;
+            
+            background-color: #1E1E1E;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            height: 30vh;
+            width: 100%;
+            margin-right: auto;
+        }
+
+        .photoreviewvid {
+            display: block;
+            height: fit-content;
+        }
+
+        .photo {
+            width: 100%;
+           
+        }
+
+        
+.reviewvid {
+    width: 100%;
+}
+
+.vid {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+}
+  }
+
+/* ---------------------------------------------------------------PARTIE CONTACT----------------------------------------------------------------------- */
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    color: whitesmoke;
+    height: 90vh;
+    background-image: url('fondblur.png');
+    background-repeat: no-repeat;
+    
+}
+
+.espaceurform1 {
+    height: 5vh;
+}
+
+.separateurform1 {
+    border: 1px solid #9B5DA1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titreform {
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+.toutform {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nommail {
+    display: flex;
+    height: 15vh;
+}
+
+.nom {
+    width: 50%;
+
+}
+
+.mail {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demande {
+    height: 15vh;
+}
+
+.lemessage {
+    height: 25vh;
+    display: flex;
+}
+
+.messageform {
+    height: 25vh;
+    width: 100%;
+}
+
+input, select {
+    border-radius: 1rem;
+    background-color: #4e4d4d;
+    color: #FFFFFF;
+    height: 4vh;
+}
+
+.testinput {
+    width: 50%;
+}
+
+.boutonenvoyer {
+    text-align: center;
+}
+
+button {
+    background-color: #4e4d4d;
+    color: #9B5DA1;
+    font-weight: 400;
+    font-size: larger;
+    padding: 1vh 2vw 1vh 2vw;
+}
+
+button:hover {
+    background-color: #9B5DA1;
+    color: #4e4d4d;
+    transform: translate(-2px, -2px);
+    box-shadow: 0 2px 2px 0 #070707;
+    transition: all 1s;
+    
+}
+
+
+
+/*--------------------------------------------------------------------------------------PARTIE BOARD------------------------------------------------------------------------------ */
+
+
+.listeboard {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #1E1E1E;
+
+      
+}
+
+.board {
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9B5DA1;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle::before {
+    background: #4e4d4d;
+    clip-path: circle(400px at center);
+    
+    z-index: 999;
+}
+
+.card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.card:hover img{
+    left: 78%;
+    height: 400px;
+    z-index: 999;
+}
+
+.card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 20px;
+    transform: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.card:hover .content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+.card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+    z-index: 999;
+}
+
+.card .content h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    z-index: 999;
+}
+
+.card .content p {
+    color: #FFF;
+    z-index: 999;
+}
+
+.card .content a{
+    position: relative;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+
+
+.testcard {
+    position: absolute;
+    color: #FFF;
+    bottom: 0;
+    left: 235px;
+    text-align: center;
+    z-index: 4;
+    background-color: #9B5DA1;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 5px;
+}
+
+.titreboard {
+    font-family: 'Jolly Lodger', cursive;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .listeboard {
+        display: block;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 0rem;
+        padding: 0rem;
+          
+    }
+
+    .card {
+        position: relative;
+        width: 375px;
+        height: 225px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+
+}
+
+/*------------------------------------------------------------------------------- PARTIE CONNEXION------------------------------------------------------------------------------ */
+
+
+.connexiontout {
+    background-color: #1E1E1E;
+    color: whitesmoke;
+    height: 90vh;
+    background-image: url('fondblur.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connexionform {
+    height: 30vh;
+    position: relative;
+    width: 20vw;
+    background-color: #070707;
+    background-image: none;
+    padding: 1vh 2vw 1vh 2vw;
+    box-shadow: #070707 0 0 2vh 2vw;
+}
+
+.connexionform input {
+    right: 2vw;
+    position: absolute;
+}
+
+.connexionform h2 {
+    text-align: center;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+        .connexionform {
+            width: 80vw;
+        }
+
+}
+
+
+/*--------------------------------------------------------------------------------PARTIE CART----------------------------------------------------------------------------------- */
+
+
+.carttout {
+    background-color: #1E1E1E;
+    color: whitesmoke;
+    height: 90vh;
+    background-image: url('fondblur.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*--------------------------------------------------------------------------------PARTIE ABOUT US----------------------------------------------------------------------------------- */
+
+.aboutustout{
+    background-color: #1E1E1E;
+    color: #fff;
+}
+
+.blabla1photo {
+    display: flex;
+}
+
+.blabla1 {
+    width: 50%;
+}
+
+.photos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.textphoto {
+    display: flex;
+}
+
+.phototext {
+    display: flex;
+}
+
+.photo2taille {
+    width: 45%;
+}
+
+.photo1taille {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+.penche1 {
+    transform: rotate(33deg);
+}
+.penche2 {
+    transform: rotate(-33deg);
+}
+.penche3 {
+    transform: rotate(24deg);
+}
