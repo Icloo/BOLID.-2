@@ -487,8 +487,8 @@ button:hover {
 
 .card {
     position: relative;
-    width: 600px;
-    height: 450px;
+    width: 33vw;
+    height: 20vh;
     border-radius: 20px;
     display: flex;
     align-items: center;
