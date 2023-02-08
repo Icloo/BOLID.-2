@@ -116,7 +116,7 @@ nav {
 
 .tout {
     display: flex;
-    width: 100vw;
+
    
 }
 
@@ -249,7 +249,7 @@ p {
 }
 
 .slogan {
-    height: 60vh;
+
     display: flex;
     align-items: center;
     
@@ -265,7 +265,7 @@ p {
 }
 
 .rslogo {
-    height: 30vh;
+
     display: flex;
 }
 
