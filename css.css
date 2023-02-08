@@ -486,8 +486,7 @@ button:hover {
 
 .card {
     position: relative;
-    width: 20vw;
-    height: 20vh;
+
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -540,7 +539,6 @@ button:hover {
     z-index: 999;
 }
 
-
 .card .content{
     position: relative;
     width: 50%;
@@ -551,6 +549,7 @@ button:hover {
     visibility: hidden;
     z-index: 999;
 }
+
 
 .card:hover .content {
     left: 0;
