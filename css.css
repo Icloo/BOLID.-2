@@ -486,7 +486,7 @@ button:hover {
 
 .card {
     position: relative;
-    width: 25vw;
+    width: 20vw;
     height: 20vh;
     border-radius: 20px;
     display: flex;
@@ -528,7 +528,7 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 19vh;
+    height: 10vh;
     pointer-events: none;
     transition: 0.5s;
     z-index: 999;
@@ -536,9 +536,10 @@ button:hover {
 
 .card:hover img{
     left: 78%;
-    height: 19vh;
+    height: 15vh;
     z-index: 999;
 }
+
 
 .card .content{
     position: relative;
