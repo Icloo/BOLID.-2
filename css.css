@@ -249,10 +249,9 @@ p {
 }
 
 .slogan {
-
     display: flex;
     align-items: center;
-    
+    margin-top: 5vh;
 }
 
 
